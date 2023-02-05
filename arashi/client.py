@@ -52,5 +52,5 @@ class Client:
                 await asyncio.sleep(5)
             except Exception as e:
                 logger.error(repr(e))
-                logger.warning(f"Retrying in 10 seconds...")
+                logger.warning("Retrying in 10 seconds...")
                 await asyncio.sleep(10)
